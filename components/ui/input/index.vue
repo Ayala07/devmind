@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <VsInput label-placeholder="TEXTO"/>
+  <div class="space-y-8">
+    <VsInput label-placeholder="TEXTO" icon="search"/>
   </div>
 </template>
 
