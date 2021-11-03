@@ -48,6 +48,12 @@ export default {
     '@nuxtjs/pwa',
   ],
 
+  // Configuration from color-mode module
+  colorModel: {
+    preference: 'dark',
+    fallback: 'light',
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
