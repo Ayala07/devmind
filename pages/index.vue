@@ -1,7 +1,9 @@
 <template>
-  <div class="m-10 space-y-8">
-    <UiInput />
-    <UiColorSwitch />
+  <div class="container m-10 dark:bg-dark-50">
+    <div class="space-y-8 p-10">
+      <UiInput />
+      <UiColorSwitch />
+    </div>
   </div>
 </template>
 

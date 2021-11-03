@@ -1,9 +1,11 @@
 <template>
-  <div class="flex flex-col content-center">
-    <p class="w-full">{{ $colorMode.preference }}</p>
+  <div>
+    <p class="w-full text-gray-400">{{ $colorMode.preference }}</p>
+
     <VsIcon
       v-if="$colorMode.preference !== 'light'"
-      class="cursor-pointer"
+      class="cursor-pointer w-6 h-6"
+      color="white"
       icon="wb_incandescent"
       @click="switchTheme('light')"
     />
