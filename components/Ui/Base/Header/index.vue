@@ -1,5 +1,5 @@
 <template>
-  <header class="flex items-center justify-between p-4 dark:bg-blue-main-800 dark:text-light-500">
+  <header class="flex items-center justify-between p-4 h-56px dark:(bg-blue-main-800 text-white)">
     <NuxtLink class="flex items-center" to="/">
       <VsIcon class="w-5 mr-3" icon="personal_video"/>
       <h1 class="font-bold text-base">Devmind</h1>
