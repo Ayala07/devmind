@@ -24,7 +24,7 @@ import { defineComponent, useContext } from '@nuxtjs/composition-api';
 
 
 export default defineComponent({
-  name: 'ColorSwitch',
+  name: 'SwitchTheme',
   setup() {
     const { $colorMode } = useContext();
 
