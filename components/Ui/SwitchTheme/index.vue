@@ -1,7 +1,5 @@
 <template>
   <div>
-    <p class="w-full text-gray-400">{{ $colorMode.preference }}</p>
-
     <VsIcon
       v-if="$colorMode.preference !== 'light'"
       class="cursor-pointer w-6 h-6"
