@@ -6,7 +6,8 @@
         <h1 class="text-center text-3xl font-bold">Devmind</h1>
       </div>
 
-      <div class="login-body h-full mt-12 pt-56 flex justify-center bg-light dark:(bg-blue-main-800)">
+      <div class="login-body h-full mt-12 pb-60 flex flex-col items-center justify-center bg-light dark:(bg-blue-main-800)">
+        <AuthSocialLoginButton text="Iniciar Sesión con Google" />
         <p>Iniciar sesión con Google</p>
       </div>
     </main>

@@ -6,6 +6,9 @@ export default {
         dark: theme('colors.blue-main.900'),
       }),
       colors: {
+        'red-main': {
+          600: '#F43D35',
+        },
         'gray-main': {
           300: '#EAEDF2'
         },
