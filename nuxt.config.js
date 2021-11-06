@@ -47,6 +47,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // https://firebase.nuxtjs.org/
+    '@nuxtjs/firebase',
   ],
 
   // Configuration from color-mode module
@@ -56,8 +58,31 @@ export default {
     classSuffix: '',
   },
 
+  firebase: {
+    config: {
+      apiKey: process.env.VUE_APP_FIREBASE_KEY,
+      authDomain: "devmind-6dcc6.firebaseapp.com",
+      projectId: "devmind-6dcc6",
+      storageBucket: "devmind-6dcc6.appspot.com",
+      messagingSenderId: "676798224295",
+      appId: "1:676798224295:web:1de96c9f330d25e5698882",
+      measurementId: "G-PR39R80YJ9"
+    },
+    services: {
+      auth: true,
+      firestore: true,
+      storage: true,
+      analytics: true,
+      performance: true,
+    }
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  env: {
+    VUE_APP_FIREBASE_KEY: process.env.VUE_APP_FIREBASE_KEY
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

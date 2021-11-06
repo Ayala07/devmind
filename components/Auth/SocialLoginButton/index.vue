@@ -1,11 +1,12 @@
 <template>
-  <button
-    class="rounded-full py-2 px-6 flex items-center"
-    :class="type"
+  <VsButton
+    type="filled"
+    :color="socialComponents.colors"
+    :icon="socialComponents.icons"
+    @click="$emit('click', type)"
   >
-    <VsIcon :icon="socialComponents" class="mr-2" />
-    {{ text }}
-  </button>
+    {{text}}
+  </VsButton>
 </template>
 
 <script>
@@ -27,21 +28,24 @@ export default defineComponent({
 
   setup(props) {
     const socialOptions = reactive({
-      google: 'catching_pokemon'
+      icons: {
+        google: 'catching_pokemon'
+      },
+      colors: {
+        google: 'danger'
+      }
     });
 
     const socialComponents = computed(() => {
-      return socialOptions[props.type]
+      return {
+        icons: socialOptions.icons[props.type],
+        colors: socialOptions.colors[props.type],
+      }
     });
+
 
     return { socialComponents }
   }
 
 })
 </script>
-
-<style scoped>
-  .google {
-    @apply bg-red-main-600 border-red-main-600 text-white;
-  }
-</style>

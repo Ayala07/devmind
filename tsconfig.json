@@ -24,11 +24,13 @@
       ]
     },
     "types": [
+      "node",
       "@nuxt/types",
       "@nuxtjs/axios",
       "@types/node",
       "nuxt-windicss",
-      "@nuxtjs/color-mode"
+      "@nuxtjs/color-mode",
+      "@nuxtjs/firebase"
     ]
   },
   "exclude": [
